@@ -1,25 +1,25 @@
 languageCode = "zh"
 languageName = "Chinese"
 weight = 1
-title = "这里是太一的博客"
+title = "Taiyi's blog"
 
 [params]
-  displayName = "EN"
-  isoCode = "en"
+  displayName = "ZH"
+  isoCode = "zh"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/logo.png"
-  # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
-  # copyright = "Copy, _right?_ :thinking_face:"
+  logo = "img/logo.png"
+  secondaryLogo = "img/logo-dog.jpg"
+  description = "My awesome website"
+  copyright = "Copy, _right?_ :thinking_face:"
 
-# [author]
-#   name = "Your name here"
-#   image = "img/blowfish_logo.png"
-#   headline = "I'm only human"
-#   bio = "A little bit about you"
-#   links = [
-#     { email = "mailto:hello@your_domain.com" },
+[author]
+   name = "Taiyi"
+   image = "img/author.jpg"
+   headline = "I'm only human"
+   bio = "A little bit about you"
+   links = [
+     { email = "mailto:vkmki001@gmail.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
@@ -31,7 +31,7 @@ title = "这里是太一的博客"
 #     { facebook = "https://facebook.com/username" },
 #     { flickr = "https://www.flickr.com/photos/username/" },
 #     { foursquare = "https://foursquare.com/username" },
-#     { github = "https://github.com/username" },
+     { github = "https://github.com/vkmki001" },
 #     { gitlab = "https://gitlab.com/username" },
 #     { google = "https://www.google.com/" },
 #     { hashnode = "https://username.hashnode.dev" },
@@ -61,4 +61,4 @@ title = "这里是太一的博客"
 #     { whatsapp = "https://wa.me/phone-number" },
 #     { youtube = "https://youtube.com/username" },
 #     { ko-fi = "https://ko-fi.com/username" },
-#   ]
+   ]
