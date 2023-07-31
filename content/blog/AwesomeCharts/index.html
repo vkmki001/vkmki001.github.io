@@ -1,0 +1,815 @@
+---
+title: "使用Python绘制桑基图"
+date: 2023-07-31T22:02:23+08:00
+draft: false
+---
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="1b5b864101cb442983391cbd5f62b8f3" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_1b5b864101cb442983391cbd5f62b8f3 = echarts.init(
+            document.getElementById('1b5b864101cb442983391cbd5f62b8f3'), 'white', {renderer: 'canvas'});
+        var option_1b5b864101cb442983391cbd5f62b8f3 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "sankey",
+            "data": [
+                {
+                    "name": "\u9996\u9875\u5f39\u7a97"
+                },
+                {
+                    "name": "\u9996\u9875\u4e8c\u697c\u5165\u53e3"
+                },
+                {
+                    "name": "\u9996\u9875banner"
+                },
+                {
+                    "name": "\u9876\u90e8icon"
+                },
+                {
+                    "name": "\u9650\u65f6\u79d2\u6740"
+                },
+                {
+                    "name": "\u7cbe\u9009\u597d\u7269\u63a8\u8350"
+                },
+                {
+                    "name": "\u70ed\u95e8\u5151\u6362\u597d\u793c"
+                },
+                {
+                    "name": "\u670d\u52a1\u7a97icon"
+                },
+                {
+                    "name": "\u5f00\u5c4f"
+                },
+                {
+                    "name": "2_\u626b\u7801"
+                },
+                {
+                    "name": "2_\u83b7\u53d6\u79ef\u5206"
+                },
+                {
+                    "name": "2_CMS\u4e13\u9898\u6d4f\u89c8"
+                },
+                {
+                    "name": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875"
+                },
+                {
+                    "name": "2_\u6d88\u8017\u79ef\u5206"
+                },
+                {
+                    "name": "2_push\u63a8\u9001"
+                },
+                {
+                    "name": "2_push_click"
+                },
+                {
+                    "name": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09"
+                },
+                {
+                    "name": "2_\u767b\u5f55"
+                },
+                {
+                    "name": "3_\u8df3\u51fa"
+                },
+                {
+                    "name": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb"
+                },
+                {
+                    "name": "3_push\u63a8\u9001"
+                },
+                {
+                    "name": "3_\u83b7\u53d6\u79ef\u5206"
+                },
+                {
+                    "name": "3_push_click"
+                },
+                {
+                    "name": "3_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09"
+                },
+                {
+                    "name": "3_\u63d0\u4ea4\u8ba2\u5355"
+                },
+                {
+                    "name": "3_\u767b\u5f55"
+                },
+                {
+                    "name": "4_\u8df3\u51fa"
+                },
+                {
+                    "name": "4_\u83b7\u53d6\u79ef\u5206"
+                },
+                {
+                    "name": "4_CMS\u4e13\u9898\u6d4f\u89c8"
+                },
+                {
+                    "name": "4_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875"
+                },
+                {
+                    "name": "4_\u6d88\u8017\u79ef\u5206"
+                },
+                {
+                    "name": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb"
+                },
+                {
+                    "name": "4_push\u63a8\u9001"
+                },
+                {
+                    "name": "4_push_click"
+                },
+                {
+                    "name": "4_\u626b\u7801"
+                },
+                {
+                    "name": "4_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09"
+                },
+                {
+                    "name": "4_\u767b\u5f55"
+                },
+                {
+                    "name": "4_\u652f\u4ed8\u8ba2\u5355"
+                },
+                {
+                    "name": "4_\u6838\u9500\u4f18\u60e0\u5238"
+                },
+                {
+                    "name": "5_\u8df3\u51fa"
+                },
+                {
+                    "name": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb"
+                },
+                {
+                    "name": "5_push\u63a8\u9001"
+                },
+                {
+                    "name": "5_\u6d88\u8017\u79ef\u5206"
+                },
+                {
+                    "name": "5_push_click"
+                },
+                {
+                    "name": "5_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09"
+                },
+                {
+                    "name": "5_\u83b7\u53d6\u79ef\u5206"
+                },
+                {
+                    "name": "5_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875"
+                },
+                {
+                    "name": "5_CMS\u4e13\u9898\u6d4f\u89c8"
+                }
+            ],
+            "links": [
+                {
+                    "source": "\u5f00\u5c4f",
+                    "target": "2_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "value": 4
+                },
+                {
+                    "source": "\u670d\u52a1\u7a97icon",
+                    "target": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "value": 181
+                },
+                {
+                    "source": "\u670d\u52a1\u7a97icon",
+                    "target": "2_\u83b7\u53d6\u79ef\u5206",
+                    "value": 14
+                },
+                {
+                    "source": "\u670d\u52a1\u7a97icon",
+                    "target": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "value": 30
+                },
+                {
+                    "source": "\u70ed\u95e8\u5151\u6362\u597d\u793c",
+                    "target": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "value": 43
+                },
+                {
+                    "source": "\u7cbe\u9009\u597d\u7269\u63a8\u8350",
+                    "target": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "value": 44
+                },
+                {
+                    "source": "\u9650\u65f6\u79d2\u6740",
+                    "target": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "value": 15
+                },
+                {
+                    "source": "\u9876\u90e8icon",
+                    "target": "2_push_click",
+                    "value": 13
+                },
+                {
+                    "source": "\u9876\u90e8icon",
+                    "target": "2_push\u63a8\u9001",
+                    "value": 141
+                },
+                {
+                    "source": "\u9876\u90e8icon",
+                    "target": "2_\u626b\u7801",
+                    "value": 12
+                },
+                {
+                    "source": "\u9876\u90e8icon",
+                    "target": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "value": 9
+                },
+                {
+                    "source": "\u9876\u90e8icon",
+                    "target": "2_\u6d88\u8017\u79ef\u5206",
+                    "value": 37
+                },
+                {
+                    "source": "\u9876\u90e8icon",
+                    "target": "2_\u767b\u5f55",
+                    "value": 21
+                },
+                {
+                    "source": "\u9876\u90e8icon",
+                    "target": "2_\u83b7\u53d6\u79ef\u5206",
+                    "value": 637
+                },
+                {
+                    "source": "\u9876\u90e8icon",
+                    "target": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "value": 5
+                },
+                {
+                    "source": "\u9996\u9875banner",
+                    "target": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "value": 13
+                },
+                {
+                    "source": "\u9996\u9875\u4e8c\u697c\u5165\u53e3",
+                    "target": "2_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "value": 14
+                },
+                {
+                    "source": "\u9996\u9875\u5f39\u7a97",
+                    "target": "2_\u626b\u7801",
+                    "value": 6
+                },
+                {
+                    "source": "\u9996\u9875\u5f39\u7a97",
+                    "target": "2_\u83b7\u53d6\u79ef\u5206",
+                    "value": 14
+                },
+                {
+                    "source": "2_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 10
+                },
+                {
+                    "source": "2_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "target": "3_\u8df3\u51fa",
+                    "value": 8
+                },
+                {
+                    "source": "2_push_click",
+                    "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 13
+                },
+                {
+                    "source": "2_push\u63a8\u9001",
+                    "target": "3_push_click",
+                    "value": 16
+                },
+                {
+                    "source": "2_push\u63a8\u9001",
+                    "target": "3_\u83b7\u53d6\u79ef\u5206",
+                    "value": 7
+                },
+                {
+                    "source": "2_push\u63a8\u9001",
+                    "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 106
+                },
+                {
+                    "source": "2_push\u63a8\u9001",
+                    "target": "3_\u8df3\u51fa",
+                    "value": 12
+                },
+                {
+                    "source": "2_\u626b\u7801",
+                    "target": "3_\u83b7\u53d6\u79ef\u5206",
+                    "value": 4
+                },
+                {
+                    "source": "2_\u626b\u7801",
+                    "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 8
+                },
+                {
+                    "source": "2_\u626b\u7801",
+                    "target": "3_\u8df3\u51fa",
+                    "value": 6
+                },
+                {
+                    "source": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "target": "3_\u63d0\u4ea4\u8ba2\u5355",
+                    "value": 16
+                },
+                {
+                    "source": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "target": "3_\u767b\u5f55",
+                    "value": 4
+                },
+                {
+                    "source": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 240
+                },
+                {
+                    "source": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "target": "3_\u8df3\u51fa",
+                    "value": 22
+                },
+                {
+                    "source": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "target": "3_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "value": 23
+                },
+                {
+                    "source": "2_\u6d88\u8017\u79ef\u5206",
+                    "target": "3_push\u63a8\u9001",
+                    "value": 6
+                },
+                {
+                    "source": "2_\u6d88\u8017\u79ef\u5206",
+                    "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 20
+                },
+                {
+                    "source": "2_\u6d88\u8017\u79ef\u5206",
+                    "target": "3_\u8df3\u51fa",
+                    "value": 11
+                },
+                {
+                    "source": "2_\u767b\u5f55",
+                    "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 13
+                },
+                {
+                    "source": "2_\u767b\u5f55",
+                    "target": "3_\u8df3\u51fa",
+                    "value": 8
+                },
+                {
+                    "source": "2_\u83b7\u53d6\u79ef\u5206",
+                    "target": "3_push_click",
+                    "value": 4
+                },
+                {
+                    "source": "2_\u83b7\u53d6\u79ef\u5206",
+                    "target": "3_push\u63a8\u9001",
+                    "value": 110
+                },
+                {
+                    "source": "2_\u83b7\u53d6\u79ef\u5206",
+                    "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 499
+                },
+                {
+                    "source": "2_\u83b7\u53d6\u79ef\u5206",
+                    "target": "3_\u8df3\u51fa",
+                    "value": 46
+                },
+                {
+                    "source": "2_\u83b7\u53d6\u79ef\u5206",
+                    "target": "3_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "value": 6
+                },
+                {
+                    "source": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "3_\u83b7\u53d6\u79ef\u5206",
+                    "value": 4
+                },
+                {
+                    "source": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 23
+                },
+                {
+                    "source": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "3_\u8df3\u51fa",
+                    "value": 8
+                },
+                {
+                    "source": "3_push_click",
+                    "target": "4_push\u63a8\u9001",
+                    "value": 8
+                },
+                {
+                    "source": "3_push_click",
+                    "target": "4_\u83b7\u53d6\u79ef\u5206",
+                    "value": 4
+                },
+                {
+                    "source": "3_push_click",
+                    "target": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 8
+                },
+                {
+                    "source": "3_push\u63a8\u9001",
+                    "target": "4_push_click",
+                    "value": 6
+                },
+                {
+                    "source": "3_push\u63a8\u9001",
+                    "target": "4_\u626b\u7801",
+                    "value": 5
+                },
+                {
+                    "source": "3_push\u63a8\u9001",
+                    "target": "4_\u83b7\u53d6\u79ef\u5206",
+                    "value": 7
+                },
+                {
+                    "source": "3_push\u63a8\u9001",
+                    "target": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 90
+                },
+                {
+                    "source": "3_push\u63a8\u9001",
+                    "target": "4_\u8df3\u51fa",
+                    "value": 8
+                },
+                {
+                    "source": "3_\u63d0\u4ea4\u8ba2\u5355",
+                    "target": "4_\u652f\u4ed8\u8ba2\u5355",
+                    "value": 10
+                },
+                {
+                    "source": "3_\u63d0\u4ea4\u8ba2\u5355",
+                    "target": "4_\u6d88\u8017\u79ef\u5206",
+                    "value": 6
+                },
+                {
+                    "source": "3_\u767b\u5f55",
+                    "target": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 4
+                },
+                {
+                    "source": "3_\u83b7\u53d6\u79ef\u5206",
+                    "target": "4_push\u63a8\u9001",
+                    "value": 7
+                },
+                {
+                    "source": "3_\u83b7\u53d6\u79ef\u5206",
+                    "target": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 8
+                },
+                {
+                    "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "4_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "value": 11
+                },
+                {
+                    "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "4_push_click",
+                    "value": 14
+                },
+                {
+                    "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "4_push\u63a8\u9001",
+                    "value": 85
+                },
+                {
+                    "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "4_\u626b\u7801",
+                    "value": 17
+                },
+                {
+                    "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "4_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "value": 236
+                },
+                {
+                    "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "4_\u6d88\u8017\u79ef\u5206",
+                    "value": 53
+                },
+                {
+                    "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "4_\u767b\u5f55",
+                    "value": 26
+                },
+                {
+                    "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "4_\u83b7\u53d6\u79ef\u5206",
+                    "value": 377
+                },
+                {
+                    "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "4_\u8df3\u51fa",
+                    "value": 98
+                },
+                {
+                    "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "4_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "value": 15
+                },
+                {
+                    "source": "3_\u8df3\u51fa",
+                    "target": "4_\u8df3\u51fa",
+                    "value": 121
+                },
+                {
+                    "source": "3_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "4_\u6838\u9500\u4f18\u60e0\u5238",
+                    "value": 13
+                },
+                {
+                    "source": "3_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 16
+                },
+                {
+                    "source": "4_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 11
+                },
+                {
+                    "source": "4_push_click",
+                    "target": "5_push\u63a8\u9001",
+                    "value": 6
+                },
+                {
+                    "source": "4_push_click",
+                    "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 14
+                },
+                {
+                    "source": "4_push\u63a8\u9001",
+                    "target": "5_push_click",
+                    "value": 16
+                },
+                {
+                    "source": "4_push\u63a8\u9001",
+                    "target": "5_\u83b7\u53d6\u79ef\u5206",
+                    "value": 4
+                },
+                {
+                    "source": "4_push\u63a8\u9001",
+                    "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 75
+                },
+                {
+                    "source": "4_push\u63a8\u9001",
+                    "target": "5_\u8df3\u51fa",
+                    "value": 5
+                },
+                {
+                    "source": "4_\u626b\u7801",
+                    "target": "5_\u83b7\u53d6\u79ef\u5206",
+                    "value": 13
+                },
+                {
+                    "source": "4_\u626b\u7801",
+                    "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 9
+                },
+                {
+                    "source": "4_\u652f\u4ed8\u8ba2\u5355",
+                    "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 10
+                },
+                {
+                    "source": "4_\u6838\u9500\u4f18\u60e0\u5238",
+                    "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 13
+                },
+                {
+                    "source": "4_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "target": "5_\u83b7\u53d6\u79ef\u5206",
+                    "value": 12
+                },
+                {
+                    "source": "4_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 204
+                },
+                {
+                    "source": "4_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "target": "5_\u8df3\u51fa",
+                    "value": 11
+                },
+                {
+                    "source": "4_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "target": "5_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "value": 9
+                },
+                {
+                    "source": "4_\u6d88\u8017\u79ef\u5206",
+                    "target": "5_\u83b7\u53d6\u79ef\u5206",
+                    "value": 5
+                },
+                {
+                    "source": "4_\u6d88\u8017\u79ef\u5206",
+                    "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 46
+                },
+                {
+                    "source": "4_\u6d88\u8017\u79ef\u5206",
+                    "target": "5_\u8df3\u51fa",
+                    "value": 8
+                },
+                {
+                    "source": "4_\u767b\u5f55",
+                    "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 22
+                },
+                {
+                    "source": "4_\u767b\u5f55",
+                    "target": "5_\u8df3\u51fa",
+                    "value": 4
+                },
+                {
+                    "source": "4_\u83b7\u53d6\u79ef\u5206",
+                    "target": "5_push_click",
+                    "value": 9
+                },
+                {
+                    "source": "4_\u83b7\u53d6\u79ef\u5206",
+                    "target": "5_push\u63a8\u9001",
+                    "value": 36
+                },
+                {
+                    "source": "4_\u83b7\u53d6\u79ef\u5206",
+                    "target": "5_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "value": 7
+                },
+                {
+                    "source": "4_\u83b7\u53d6\u79ef\u5206",
+                    "target": "5_\u6d88\u8017\u79ef\u5206",
+                    "value": 4
+                },
+                {
+                    "source": "4_\u83b7\u53d6\u79ef\u5206",
+                    "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 314
+                },
+                {
+                    "source": "4_\u83b7\u53d6\u79ef\u5206",
+                    "target": "5_\u8df3\u51fa",
+                    "value": 18
+                },
+                {
+                    "source": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "5_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "value": 6
+                },
+                {
+                    "source": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "5_push\u63a8\u9001",
+                    "value": 28
+                },
+                {
+                    "source": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "5_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
+                    "value": 12
+                },
+                {
+                    "source": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "5_\u6d88\u8017\u79ef\u5206",
+                    "value": 19
+                },
+                {
+                    "source": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "5_\u83b7\u53d6\u79ef\u5206",
+                    "value": 43
+                },
+                {
+                    "source": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "5_\u8df3\u51fa",
+                    "value": 13
+                },
+                {
+                    "source": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "target": "5_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "value": 5
+                },
+                {
+                    "source": "4_\u8df3\u51fa",
+                    "target": "5_\u8df3\u51fa",
+                    "value": 227
+                },
+                {
+                    "source": "4_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
+                    "value": 15
+                }
+            ],
+            "left": "5%",
+            "top": "5%",
+            "right": "20%",
+            "bottom": "5%",
+            "nodeWidth": 20,
+            "nodeGap": 15,
+            "nodeAlign": "justify",
+            "layoutIteration": 32,
+            "orient": "horizontal",
+            "draggable": true,
+            "focusNodeAdjacency": false,
+            "label": {
+                "show": true,
+                "position": "right",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 0.3,
+                "curveness": 0.5,
+                "type": "solid",
+                "color": "source"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_1b5b864101cb442983391cbd5f62b8f3.setOption(option_1b5b864101cb442983391cbd5f62b8f3);
+    </script>
+</body>
+</html>
