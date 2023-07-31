@@ -12,18 +12,19 @@
 
 [[main]]
   name = "Blog"
-  pageRef = "posts"
+  pageRef = "blog"
   weight = 10
 
 [[main]]
   name = "About"
+  pageRef = "about"
   weight = 20
 
-[[main]]
-  name = "example sub-menu 1"
-  parent = "About"
-  pageRef = "posts"
-  weight = 20
+#[[main]]
+#  name = "example sub-menu 1"
+#  parent = "About"
+#  pageRef = "posts"
+#  weight = 20
 
 #[[main]]
 #  name = "example sub-menu 2"
