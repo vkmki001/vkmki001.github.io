@@ -17,8 +17,8 @@ mainSections = ["posts", "projects", "blog"]
 
 disableImageOptimization = true
 
-defaultBackgroundImage = "background.jpg" # used as default for background images 
-defaultFeaturedImage = "background.jpg" # used as default for featured images in all articles
+# defaultBackgroundImage = "background.jpg" # used as default for background images 
+# defaultFeaturedImage = "background.jpg" # used as default for featured images in all articles
 
 # highlightCurrentMenuArea = true
 # smartTOC = true
