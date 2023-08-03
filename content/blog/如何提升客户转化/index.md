@@ -39,7 +39,7 @@ draft: false
 
 如下展示了一个示例：
 
----
+
 
 <!DOCTYPE html>
 <html>
@@ -315,7 +315,7 @@ draft: false
                     "name": "2_\u83b7\u53d6\u79ef\u5206"
                 },
                 {
-                    "name": "2_CMS\u4e13\u9898\u6d4f\u89c8"
+                    "name": "2_\u4e13\u9898\u6d4f\u89c8"
                 },
                 {
                     "name": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875"
@@ -327,10 +327,10 @@ draft: false
                     "name": "2_push\u63a8\u9001"
                 },
                 {
-                    "name": "2_push_click"
+                    "name": "2_push点击"
                 },
                 {
-                    "name": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09"
+                    "name": "2_\u9886\u53d6\u4f18\u60e0\u5238"
                 },
                 {
                     "name": "2_\u767b\u5f55"
@@ -348,10 +348,10 @@ draft: false
                     "name": "3_\u83b7\u53d6\u79ef\u5206"
                 },
                 {
-                    "name": "3_push_click"
+                    "name": "3_push点击"
                 },
                 {
-                    "name": "3_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09"
+                    "name": "3_\u9886\u53d6\u4f18\u60e0\u5238"
                 },
                 {
                     "name": "3_\u63d0\u4ea4\u8ba2\u5355"
@@ -366,7 +366,7 @@ draft: false
                     "name": "4_\u83b7\u53d6\u79ef\u5206"
                 },
                 {
-                    "name": "4_CMS\u4e13\u9898\u6d4f\u89c8"
+                    "name": "4_\u4e13\u9898\u6d4f\u89c8"
                 },
                 {
                     "name": "4_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875"
@@ -381,13 +381,13 @@ draft: false
                     "name": "4_push\u63a8\u9001"
                 },
                 {
-                    "name": "4_push_click"
+                    "name": "4_push点击"
                 },
                 {
                     "name": "4_\u626b\u7801"
                 },
                 {
-                    "name": "4_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09"
+                    "name": "4_\u9886\u53d6\u4f18\u60e0\u5238"
                 },
                 {
                     "name": "4_\u767b\u5f55"
@@ -411,10 +411,10 @@ draft: false
                     "name": "5_\u6d88\u8017\u79ef\u5206"
                 },
                 {
-                    "name": "5_push_click"
+                    "name": "5_push点击"
                 },
                 {
-                    "name": "5_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09"
+                    "name": "5_\u9886\u53d6\u4f18\u60e0\u5238"
                 },
                 {
                     "name": "5_\u83b7\u53d6\u79ef\u5206"
@@ -423,13 +423,13 @@ draft: false
                     "name": "5_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875"
                 },
                 {
-                    "name": "5_CMS\u4e13\u9898\u6d4f\u89c8"
+                    "name": "5_\u4e13\u9898\u6d4f\u89c8"
                 }
             ],
             "links": [
                 {
                     "source": "\u5f00\u5c4f",
-                    "target": "2_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "target": "2_\u4e13\u9898\u6d4f\u89c8",
                     "value": 4
                 },
                 {
@@ -444,7 +444,7 @@ draft: false
                 },
                 {
                     "source": "\u670d\u52a1\u7a97icon",
-                    "target": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "2_\u9886\u53d6\u4f18\u60e0\u5238",
                     "value": 30
                 },
                 {
@@ -464,7 +464,7 @@ draft: false
                 },
                 {
                     "source": "\u9876\u90e8icon",
-                    "target": "2_push_click",
+                    "target": "2_push点击",
                     "value": 13
                 },
                 {
@@ -499,7 +499,7 @@ draft: false
                 },
                 {
                     "source": "\u9876\u90e8icon",
-                    "target": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "2_\u9886\u53d6\u4f18\u60e0\u5238",
                     "value": 5
                 },
                 {
@@ -509,7 +509,7 @@ draft: false
                 },
                 {
                     "source": "\u9996\u9875\u4e8c\u697c\u5165\u53e3",
-                    "target": "2_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "target": "2_\u4e13\u9898\u6d4f\u89c8",
                     "value": 14
                 },
                 {
@@ -523,23 +523,23 @@ draft: false
                     "value": 14
                 },
                 {
-                    "source": "2_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "source": "2_\u4e13\u9898\u6d4f\u89c8",
                     "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
                     "value": 10
                 },
                 {
-                    "source": "2_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "source": "2_\u4e13\u9898\u6d4f\u89c8",
                     "target": "3_\u8df3\u51fa",
                     "value": 8
                 },
                 {
-                    "source": "2_push_click",
+                    "source": "2_push点击",
                     "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
                     "value": 13
                 },
                 {
                     "source": "2_push\u63a8\u9001",
-                    "target": "3_push_click",
+                    "target": "3_push点击",
                     "value": 16
                 },
                 {
@@ -594,7 +594,7 @@ draft: false
                 },
                 {
                     "source": "2_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
-                    "target": "3_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "3_\u9886\u53d6\u4f18\u60e0\u5238",
                     "value": 23
                 },
                 {
@@ -624,7 +624,7 @@ draft: false
                 },
                 {
                     "source": "2_\u83b7\u53d6\u79ef\u5206",
-                    "target": "3_push_click",
+                    "target": "3_push点击",
                     "value": 4
                 },
                 {
@@ -644,42 +644,42 @@ draft: false
                 },
                 {
                     "source": "2_\u83b7\u53d6\u79ef\u5206",
-                    "target": "3_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "3_\u9886\u53d6\u4f18\u60e0\u5238",
                     "value": 6
                 },
                 {
-                    "source": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "source": "2_\u9886\u53d6\u4f18\u60e0\u5238",
                     "target": "3_\u83b7\u53d6\u79ef\u5206",
                     "value": 4
                 },
                 {
-                    "source": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "source": "2_\u9886\u53d6\u4f18\u60e0\u5238",
                     "target": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
                     "value": 23
                 },
                 {
-                    "source": "2_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "source": "2_\u9886\u53d6\u4f18\u60e0\u5238",
                     "target": "3_\u8df3\u51fa",
                     "value": 8
                 },
                 {
-                    "source": "3_push_click",
+                    "source": "3_push点击",
                     "target": "4_push\u63a8\u9001",
                     "value": 8
                 },
                 {
-                    "source": "3_push_click",
+                    "source": "3_push点击",
                     "target": "4_\u83b7\u53d6\u79ef\u5206",
                     "value": 4
                 },
                 {
-                    "source": "3_push_click",
+                    "source": "3_push点击",
                     "target": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
                     "value": 8
                 },
                 {
                     "source": "3_push\u63a8\u9001",
-                    "target": "4_push_click",
+                    "target": "4_push点击",
                     "value": 6
                 },
                 {
@@ -729,12 +729,12 @@ draft: false
                 },
                 {
                     "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
-                    "target": "4_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "target": "4_\u4e13\u9898\u6d4f\u89c8",
                     "value": 11
                 },
                 {
                     "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
-                    "target": "4_push_click",
+                    "target": "4_push点击",
                     "value": 14
                 },
                 {
@@ -774,7 +774,7 @@ draft: false
                 },
                 {
                     "source": "3_\u8d44\u6e90\u4f4d\u70b9\u51fb",
-                    "target": "4_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "4_\u9886\u53d6\u4f18\u60e0\u5238",
                     "value": 15
                 },
                 {
@@ -783,33 +783,33 @@ draft: false
                     "value": 121
                 },
                 {
-                    "source": "3_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "source": "3_\u9886\u53d6\u4f18\u60e0\u5238",
                     "target": "4_\u6838\u9500\u4f18\u60e0\u5238",
                     "value": 13
                 },
                 {
-                    "source": "3_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "source": "3_\u9886\u53d6\u4f18\u60e0\u5238",
                     "target": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
                     "value": 16
                 },
                 {
-                    "source": "4_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "source": "4_\u4e13\u9898\u6d4f\u89c8",
                     "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
                     "value": 11
                 },
                 {
-                    "source": "4_push_click",
+                    "source": "4_push点击",
                     "target": "5_push\u63a8\u9001",
                     "value": 6
                 },
                 {
-                    "source": "4_push_click",
+                    "source": "4_push点击",
                     "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
                     "value": 14
                 },
                 {
                     "source": "4_push\u63a8\u9001",
-                    "target": "5_push_click",
+                    "target": "5_push点击",
                     "value": 16
                 },
                 {
@@ -864,7 +864,7 @@ draft: false
                 },
                 {
                     "source": "4_\u6d4f\u89c8\u5546\u54c1\u8be6\u60c5\u9875",
-                    "target": "5_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "5_\u9886\u53d6\u4f18\u60e0\u5238",
                     "value": 9
                 },
                 {
@@ -894,7 +894,7 @@ draft: false
                 },
                 {
                     "source": "4_\u83b7\u53d6\u79ef\u5206",
-                    "target": "5_push_click",
+                    "target": "5_push点击",
                     "value": 9
                 },
                 {
@@ -924,7 +924,7 @@ draft: false
                 },
                 {
                     "source": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
-                    "target": "5_CMS\u4e13\u9898\u6d4f\u89c8",
+                    "target": "5_\u4e13\u9898\u6d4f\u89c8",
                     "value": 6
                 },
                 {
@@ -954,7 +954,7 @@ draft: false
                 },
                 {
                     "source": "4_\u8d44\u6e90\u4f4d\u70b9\u51fb",
-                    "target": "5_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "target": "5_\u9886\u53d6\u4f18\u60e0\u5238",
                     "value": 5
                 },
                 {
@@ -963,7 +963,7 @@ draft: false
                     "value": 227
                 },
                 {
-                    "source": "4_\u9886\u53d6\u4f18\u60e0\u5238\uff08\u53d1\u5238\uff09",
+                    "source": "4_\u9886\u53d6\u4f18\u60e0\u5238",
                     "target": "5_\u8d44\u6e90\u4f4d\u70b9\u51fb",
                     "value": 15
                 }
@@ -1039,14 +1039,11 @@ draft: false
 </html>
 
 ---
-从如上这个桑基图中可以看到`顶部icon`占据了绝大多数用户的首次行为点位，其次是`获取积分`,但是这两个点位并没有带来太多转化，而且`获取积分`后，很少的客户才会去`消耗积分`，这告知我们需要在`顶部icon`与`获取积分`后面增强转化的机会。这是一个简单的分析示例，其实每个点位都有提升转化的密码，主要依赖数据分析人员如何去解读。
+从如上这个桑基图中可以看到`顶部icon`占据了绝大多数用户的首次行为点位，其次是`获取积分`,但是这两个点位并没有带来太多转化，而且`获取积分`后，很少的客户才会去`消耗积分`，这告知我们需要在`顶部icon`与`获取积分`后面增强转化的机会。
 
+这是一个简单的分析示例，其实每个点位都有提升转化的密码，主要依赖数据分析人员如何去解读。
 
-### 联系我们
-
-[致同会计师事务所（特殊普通合伙）](https://www.grantthornton.cn/)（简称：致同）成立于1981年，是中国最早的会计师事务所之一，也是Grant Thornton International Ltd（GTIL, 致同国际）在中国的成员所，主要提供审计、税务、咨询、评估与估值、工程管理等服务。
-
-联系方式：+86-18681588357
+后面将介绍使用Python搭建桑基图的代码示例。
 
 
 
