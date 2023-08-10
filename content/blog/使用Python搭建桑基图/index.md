@@ -16,7 +16,7 @@ tags: ["Python", "桑基图"]
 ### 环境配置
 
 使用`Pandas`来清洗数据，`Sankey`来完成后面的画图。
-```
+```python
 import os
 import glob
 import pandas as pd
@@ -32,6 +32,7 @@ from pyecharts import options as opts
 from pyecharts.render import make_snapshot
 ```
 
+
 ### 数据清洗
 当时是从分析系统服务器导出了埋点数据到本地，每个都是csv文件，所以先把本地的csv文件汇总一下。
 ```
@@ -41,7 +42,7 @@ all_filenames = [i for i in glob.glob('*.{}'.format(extension))]
 ```
 当时也发现了一部分异常数据，比如有的用户在注册之前已经开始在我们APP上有活跃行为了，先把这些人找出来后面剔除掉。
 
-```
+```python
 #xwhen是行为日期，regiset_date是注册日期
 ar1 = np.array([])
 for i in all_filenames:
@@ -51,7 +52,7 @@ for i in all_filenames:
         ar1 = np.concatenate((ar1,act_b4_reg))
 ```
 取每个文件的首次使用功能，后面排序时会用到rank。
-```
+```python
 for i in all_filenames:
     df_child = pd.read_csv('{0}'.format(i))
     if df_child.shape[0] >0:
@@ -62,7 +63,7 @@ for i in all_filenames:
         df_child.to_csv('./min_xwhen_filter/child_{0}'.format(i))
 ```
 读取新的文件，把每个child汇总成一个parent，查了下有四百万条记录。
-```
+```python
 os.chdir("./min_xwhen_filter")
 
 extension = 'csv'
@@ -72,7 +73,7 @@ df_parent = pd.concat([pd.read_csv(f) for f in all_filenames_new ])
 df_parent.drop(['Unnamed: 0','Unnamed: 0.1'], axis = 1,inplace = True)
 ```
 特征处理，把日期加工成可读的格式。
-```
+```python
 #每天的数据汇总会再排一下序
 df_parent['rank'] = df_parent.groupby('distinct_id')['xwhen'].rank(ascending = True)
 df_parent['xwhen2'] = pd.to_datetime(df_parent['xwhen']/1000,unit = "s") + pd.Timedelta('08:00:00')
@@ -94,11 +95,11 @@ df_parent['quarter'] = df_parent.xwhen2.dt.strftime('%Y-%m-%d').apply(lambda x: 
 
 ```
 剔除注册之前活跃的用户
-```
+```python
 df_parent = df_parent[~df_parent.distinct_id.isin(ar1)]
 ```
 
-```
+```python
 #将resource_click 与其他xwhat分开
 df_rsc_clck = df_parent2[df_parent2.xwhat == 'resource_click'][['distinct_id','rank','resource_location']].drop_duplicates()
 
@@ -134,27 +135,27 @@ df_after_rec_click = df_after_rec_click[['distinct_id_x','rank_x','xwhat_x']].\
                      rename(columns = {'distinct_id_x':'distinct_id','rank_x': 'rank', 'xwhat_x':'xwhat'})
 ```
 
-```
+```python
 #合并resource_click与其之后的xhwat
 df_user_journey = pd.concat([df_rsc_clck.rename(columns = {'resource_location': 'xwhat'}), df_after_rec_click])
 del df_rsc_clck
 del df_after_rec_click
 ```
 
-```
+```python
 #通过rank2来排序
 df_user_journey['rank2'] = df_user_journey.groupby('distinct_id')['rank'].rank(ascending = True)
 df_user_journey.to_csv('./user_journey/user_journey.csv')
 ```
 
-```
+```python
 df_user_journey = pd.read_csv('user_journey.csv')
 df_user_journey.drop('Unnamed: 0', axis = 1, inplace = True)
 ```
 ### 要素构建
 
 桑基图组成要素——节点、边和流量。
-```
+```python
 test_user_journey = df_user_journey[df_user_journey.rank2 == 1].\
                      merge( df_user_journey[df_user_journey.rank2 == 2], how = 'left', on = 'distinct_id').\
                      merge( df_user_journey[df_user_journey.rank2 == 3], how = 'left', on = 'distinct_id')
@@ -170,8 +171,8 @@ test_user_journey = test_user_journey.sort_values(by = ['xwhat_x','xwhat_y','xwh
 test_user_journey['xwhat_y'] = '2_'+a.xwhat_y
 test_user_journey['xwhat_z'] = '3_'+test_user_journey.xwhat_z
 ```
-
-```
+定义桑基图的节点：
+```python
 nodes = []
 
 for i in range(3):
@@ -182,7 +183,7 @@ for i in range(3):
         nodes.append(dic)
 ```
 
-```
+```python
 first = test_user_journey.groupby(['xwhat_x','xwhat_y'])['distinct_id'].sum().reset_index()
 second = test_user_journey.groupby(['xwhat_y','xwhat_z'])['distinct_id'].sum().reset_index()
 first.columns = ['source','target','value']
@@ -193,7 +194,8 @@ result = pd.concat([first,second])
 
 ![示例](result.png "Image caption")
 
-```
+定义桑基图的流量：
+```python
 linkes = []
 
 for i in result.values:
@@ -205,7 +207,8 @@ for i in result.values:
 ```
 
 ### 绘图
-```
+
+```python
 pic = (
     Sankey()
     .add('',
@@ -217,7 +220,11 @@ pic = (
     )
     .set_global_opts(title_opts=opts.TitleOpts(title = '客户购买路径流转图'))
 )
-pic.render('test33.html')
+```
+
+### 把画好的桑基图保存成html格式 
+```python
+pic.render('客户购买路径流转图.html')
 ```
 
 
