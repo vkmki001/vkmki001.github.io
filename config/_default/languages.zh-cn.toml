@@ -16,7 +16,7 @@ title = "Taiyi's blog :hamburger:"
 [author]
    name = "太一"
    image = "img/author.jpg"
-   headline = "Beautiful is better than ugly. Explicit is better than implicit."
+#   headline = "Beautiful is better than ugly. Explicit is better than implicit."
    bio = ""
    links = [
      { email = "mailto:vkmki001@163.com" },

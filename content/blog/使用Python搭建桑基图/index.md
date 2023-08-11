@@ -190,11 +190,10 @@ first.columns = ['source','target','value']
 second.columns = ['source','target','value']
 result = pd.concat([first,second])
 ```
-搭建好后基本是这种形态：
+搭建好后基本是这种形态(取了DataFrame的前几条数据)：
+![示例](result.png)
 
-![示例](result.png "Image caption")
-
-定义桑基图的流量：
+用循环便利的方式将流量转换成桑基图可使用的字典格式：
 ```python
 linkes = []
 
@@ -222,7 +221,7 @@ pic = (
 )
 ```
 
-### 把画好的桑基图保存成html格式 
+再把呈现的图保存成html格式就好啦：
 ```python
 pic.render('客户购买路径流转图.html')
 ```
