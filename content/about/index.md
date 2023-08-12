@@ -27,35 +27,41 @@ layoutBackgroundHeaderSpace: false
 <table>
     <thead>
         <tr>
-            <th style="text-align: center;">公司</th>
-            <th style="text-align: center;">链接</th>
-            <th style="text-align: center;">角色</th>
-            <th style="text-align: center;">时间</th>
-            <th style="text-align: center;">地点</th>
+            <th style="text-align: left;">公司</th>
+            <th style="text-align: left;">链接</th>
+            <th style="text-align: left;">角色</th>
+            <th style="text-align: left;">时间</th>
+            <th style="text-align: left;">地点</th>
         </tr>
     </thead>
     <tbody>
         <tr >
-            <td style="vertical-align: middle;"><img class="customEntitityLogo" src="docker.png" height="100" width="100"/></td>
+            <td style="vertical-align: middle;"><img class="customEntitityLogo" src="gt.png" height="150" width="150"/></td>
             <td style="vertical-align: middle;"><a href="https://www.grantthornton.cn/about-us/" target="_blank">致同会计师事务所</a></td>
             <td style="vertical-align: middle;">数字化项目经理</td>
             <td style="vertical-align: middle;">2022 - 当前</td>
             <td style="vertical-align: middle;">广东，深圳</td>
         </tr>
-        <tr>
-            <td><img class="customEntitityLogo" src="docke.png"/></td>
-            <td><a href="https://aws-startup-lofts.com/emea" target="_blank">AWS Startup Loft</a></td>
-            <td>Startup Advisor</td>
-            <td>2022 - Present</td>
-            <td>广东，深圳</td>
-        </tr>    
-        <tr>
-            <td><img class="customEntitityLogo" src="d.png"/></td>
-            <td><a href="https://www.docker.com/" target="_blank">Docker</a></td>
-            <td>Staff Product Manager</td>
-            <td>2022 - Present</td>
-            <td>Full Remote </br> Lisbon, PT</td>
+        <tr >
+            <td style="vertical-align: middle;"><img class="customEntitityLogo" src="cr.png" height="150" width="150"/></td>
+            <td style="vertical-align: middle;"><a href="http://www.crmixclifestyle.com.cn/wxsh/index.html" target="_blank">华润万象生活</a></td>
+            <td style="vertical-align: middle;">数据运营主管</td>
+            <td style="vertical-align: middle;">2021 - 2022</td>
+            <td style="vertical-align: middle;">广东，深圳</td>
         </tr>
+        <tr >
+            <td style="vertical-align: middle;"><img class="customEntitityLogo" src="pa.png" height="150" width="150"/></td>
+            <td style="vertical-align: middle;"><a href="https://life.pingan.com/p/#/about" target="_blank">平安人寿保险</a></td>
+            <td style="vertical-align: middle;">数据采集工程师</td>
+            <td style="vertical-align: middle;">2020 - 2021</td>
+            <td style="vertical-align: middle;">广东，深圳</td>
+        </tr>
+        <tr >
+            <td style="vertical-align: middle;"><img class="customEntitityLogo" src="klook.png" height="150" width="150"/></td>
+            <td style="vertical-align: middle;"><a href="https://www.klook.com/zh-CN/about/" target="_blank">客路旅行科技</a></td>
+            <td style="vertical-align: middle;">运营助理</td>
+            <td style="vertical-align: middle;">2017 - 2020</td>
+            <td style="vertical-align: middle;">广东，深圳</td>
         </tr>
     </tbody>
 </table>

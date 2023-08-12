@@ -8,7 +8,7 @@ description: "This is a demo of adding content to the homepage."
   bold=true
   lifeLike=false
   breakLines=true
-  loop=true
+  loop=false
 >}}
 WE DO THIS NOT BECAUSE IT IS EASY, BUT BECAUSE WE THOUGHT IT WOULD BE EASY
 {{< /typeit >}}
