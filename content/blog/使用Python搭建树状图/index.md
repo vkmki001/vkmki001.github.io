@@ -5,7 +5,7 @@ draft: false
 #series: ["Documentation"]
 #series_order: 1
 #summary: “复习一下之前一份工作用Python搭建热力图的代码”
-tags: ["Python", "热力图"]
+tags: ["Python", "树状图"]
 ---
 
 ### 前言
@@ -60,7 +60,7 @@ norm=matplotlib.colors.Normalize(vmin=df_new['月均'].min(),
 colors=[cmap(norm(i)) for i in df_new['月均']]
 ```
 
-###作图
+### 作图
 ```python
 plt.figure(figsize=(50,30))
 title="用户页面浏览情况"
